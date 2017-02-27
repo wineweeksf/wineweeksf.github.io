@@ -51,14 +51,16 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-position: top;
   position: relative;
 }
 
 .overlay {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, .6);
 }
 
@@ -68,6 +70,10 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .title {
@@ -105,6 +111,10 @@ table {
 
 @media(max-width: 800px) {
   .content {
-    width: 94%;
+    position: static;
+    width: 90%;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 }
