@@ -11,37 +11,37 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   font-family: 'Poppins', Lato, "Helvetica Neue", Helvetica, Verdana, Geneva, Arial, sans-serif;
   color: white;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -58,10 +58,10 @@ table {
 }
 
 .overlay {
-  width: 100vw;
+  /*width: 100vw;
   min-height: 100vh;
   height: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .6);*/
 }
 
 .content {
@@ -69,18 +69,32 @@ table {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+.title-container {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(121, 24, 46, 0.8);
+  padding: 24px;
+}
+
 .title {
-  font-size: 60px;
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 40px;
   letter-spacing: 2.4px;
+}
+
+.content-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px;
+  color: rgb(121, 24, 46);
 }
 
 .sub-title {
@@ -89,15 +103,17 @@ table {
   margin-bottom: 20px;
   letter-spacing: 2px;
   line-height: 44px;
+  color: rgb(121, 24, 46);
 }
 
 .description {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   letter-spacing: 1.7px;
   line-height: 32px;
+  color: rgb(121, 24, 46);
 }
 
 .email-form {
@@ -116,5 +132,9 @@ table {
     top: 0;
     left: 0;
     transform: none;
+  }
+
+  .content-container {
+    padding: 20px;
   }
 }
