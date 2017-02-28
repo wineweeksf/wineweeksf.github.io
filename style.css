@@ -17,7 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Poppins', Lato, "Helvetica Neue", Helvetica, Verdana, Geneva, Arial, sans-serif;
+  font-family: 'Ubuntu', Lato, sans-serif, Arial;
   color: white;
 }
 /* HTML5 display-role reset for older browsers */
@@ -69,22 +69,23 @@ table {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 650px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .title-container {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background: rgba(121, 24, 46, 0.8);
-  padding: 24px;
+  padding: 30px;
 }
 
 .title {
-  font-size: 36px;
+  font-family: 'Supermercado One', cursive;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 2.4px;
 }
@@ -99,7 +100,7 @@ table {
 
 .sub-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 26px;
   margin-bottom: 20px;
   letter-spacing: 2px;
   line-height: 44px;
@@ -108,7 +109,7 @@ table {
 
 .description {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 auto;
   margin-bottom: 40px;
   letter-spacing: 1.7px;
@@ -125,7 +126,7 @@ table {
   width: 100%;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 700px) {
   .content {
     position: static;
     width: 90%;
